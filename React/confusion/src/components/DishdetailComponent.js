@@ -5,7 +5,7 @@ class DishDetail extends Component {
 
   constructor(props) {
       super(props);
-      //console.log('ctor props:', props)
+      console.log('ctor props:', props)
 
       this.state = {
           dish: []
@@ -36,7 +36,7 @@ class DishDetail extends Component {
           );
   }
 
-  renderComments(comments) {
+  renderComments(comments) { 
     if(comments != null && comments.length > 0)
     {
        return(
@@ -50,7 +50,7 @@ class DishDetail extends Component {
                             return(
                                 <li key={c.id}>
                                     <p>{c.comment}</p>
-                                    <p>{c.author} , {new Date(c.date).toLocaleDateString()}</p>
+                                    <p>{c.author} , {new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit'}).format(new Date(Date.parse(c.date)))}</p>
                                 </li>
                             )
                         })
