@@ -7,20 +7,14 @@ function RenderLeader(props)
     return(
         <div>
             <Media>
-                <Card>
-                    <CardImg width="100%" src={props.leader.image} alt={props.leader.name} />
-                </Card>
-                <div className="col-12 col-md m-1">
-                    <h4>{props.leader.name}</h4>        
-                    <div>
-                        {props.leader.designation}
-                    </div>
-                    <br/>
-                    <div>
-                        {props.leader.description}
-                    </div>
-                    <br/>
-                </div>
+                <Media left middle href="#">
+                    <Media object src={props.leader.image} alt={props.leader.name} />
+                </Media>
+                <Media body className="pl-5">
+                    <Media heading>{props.leader.name}</Media>
+                    <p>{props.leader.designation}</p>
+                    <p>{props.leader.description}</p>
+                </Media>
             </Media>
         </div>
     );
