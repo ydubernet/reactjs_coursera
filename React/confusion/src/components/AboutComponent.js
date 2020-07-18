@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
-import { Breadcrumb, BreadcrumbItem, Card,CardImg, CardBody, CardHeader, Media } from 'reactstrap';
+import { Breadcrumb, BreadcrumbItem, Card, CardBody, CardHeader, Media } from 'reactstrap';
 import { Link } from 'react-router-dom';
+import { baseUrl } from '../shared/baseUrl';
 
 function RenderLeader(props)
 {
@@ -8,7 +9,7 @@ function RenderLeader(props)
         <div>
             <Media>
                 <Media left middle href="#">
-                    <Media object src={props.leader.image} alt={props.leader.name} />
+                    <Media object src={baseUrl + props.leader.image} alt={props.leader.name} />
                 </Media>
                 <Media body className="pl-5">
                     <Media heading>{props.leader.name}</Media>
