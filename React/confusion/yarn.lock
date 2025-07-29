@@ -372,13 +372,12 @@
     "@babel/types" "^7.8.3"
 
 "@babel/helpers@^7.9.0":
-  version "7.9.0"
-  resolved "https://registry.yarnpkg.com/@babel/helpers/-/helpers-7.9.0.tgz#ab2c1bc4821af766cab51d4868a5038874ea5a12"
-  integrity sha512-/9GvfYTCG1NWCNwDj9e+XlnSCmWW/r9T794Xi58vPF9WCcnZCAZ0kWLSn54oqP40SUvh1T2G6VwKmFO5AOlW3A==
+  version "7.28.2"
+  resolved "https://registry.yarnpkg.com/@babel/helpers/-/helpers-7.28.2.tgz#80f0918fecbfebea9af856c419763230040ee850"
+  integrity sha512-/V9771t+EgXz62aCcyofnQhGM8DQACbRhvzKFsXKC9QM+5MadF8ZmIm0crDMaz3+o0h0zXfJnd4EhbYbxsrcFw==
   dependencies:
-    "@babel/template" "^7.8.3"
-    "@babel/traverse" "^7.9.0"
-    "@babel/types" "^7.9.0"
+    "@babel/template" "^7.27.2"
+    "@babel/types" "^7.28.2"
 
 "@babel/highlight@^7.10.1":
   version "7.10.1"
@@ -1102,7 +1101,7 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@babel/types@^7.27.1", "@babel/types@^7.28.0":
+"@babel/types@^7.27.1", "@babel/types@^7.28.0", "@babel/types@^7.28.2":
   version "7.28.2"
   resolved "https://registry.yarnpkg.com/@babel/types/-/types-7.28.2.tgz#da9db0856a9a88e0a13b019881d7513588cf712b"
   integrity sha512-ruv7Ae4J5dUYULmeXw1gmb7rYRz57OWCPM57pHojnLq/3Z1CK2lNSLTCVjxVk1F/TZHwOZZrOWi0ur95BbLxNQ==
